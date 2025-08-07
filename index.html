@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산본고등학교 급식 정보</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍽️ 산본고등학교 급식 정보</h1>
+        </header>
+        
+        <div class="input-section">
+            <label for="dateInput">급식 조회 날짜:</label>
+            <input type="date" id="dateInput" />
+            <button id="searchBtn">급식 정보 조회</button>
+        </div>
+        
+        <div class="loading" id="loading" style="display: none;">
+            <p>급식 정보를 불러오는 중...</p>
+        </div>
+        
+        <div class="meal-info" id="mealInfo">
+            <h2>급식 정보를 조회하려면 날짜를 선택하세요</h2>
+        </div>
+        
+        <div class="error" id="error" style="display: none;">
+            <p>급식 정보를 불러오는데 실패했습니다. 다시 시도해주세요.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
